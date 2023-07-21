@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+.top{
+     font-size:25px;
+     font-weight: bold;
+     color: white;
+     /* display: flex;
+     justify-content: center; */
+     /* flex-wrap: wrap; */
+      padding-top: 0px; 
+      margin-top: 10px;
+      padding-left: 250px;
+      padding-bottom: 200px;
+
+}
+/* .top h1{ 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center; */
+    body{
+        overflow: hidden;
+    }
+
+#home{
+   background-image: url(https://media.istockphoto.com/id/1445256568/photo/neon-programming-code.jpg?s=612x612&w=0&k=20&c=z8fHciC3VG1IbCDlh9DIHeUGsn4scwVXLuodjArxQds=); 
+   background-repeat: no-repeat; 
+   background-size: cover;
+   scroll-behavior: smooth;
+   /* background:linear-gradient(-45deg,#ea2827,#181818); */
+}
+.top :hover{
+    transform: scale(1.05);
+    /* background-color: black; */
+}
+li{
+     float: left;
+    margin-right: 10px;
+    font-size: 10px;
+    font-weight: bold;
+}
+li a{
+   padding:10px;
+   padding-bottom:10px ;
+   text-decoration: none;
+   color: white;
+}
+ul{
+    list-style: none;
+    margin:20px;
+    padding:10px ;  
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} 
+
+ /* ul li :hover{ 
+     background-color: aliceblue;
+     transform: scale(11.0s);
+    }
+ul li a:hover{
+        color: black;
+     } */
+
+.container{
+    max-width: 300px;
+    margin: auto;
+    scroll-behavior: smooth;
+}
+ nav{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color:black;
+     position: fixed; 
+    z-index: 100;
+   
+}
+nav ul{
+    display: flex;
+    align-items: center ;
+    margin-left: 50px;
+    
+}
+nav ul li a{
+  margin: 220px;
+  text-decoration: none;
+  color: white;
+  list-style: none;
+  font-size: 20px;
+} 
+#home{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20 10px;
+    /* border: 1px solid white; */
+    /* padding: 0 150px; */
+}
+.image{
+    width: 300px;
+    border-radius:20px;
+    padding-right: 50px;
+    /* margin-top: 70px; */
+}
+nav ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;  
+    margin: auto;
+    transition: 0.5s;
+}
+ nav ul li:hover::after{
+    width: 100%;
+}
+#education{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.edu {
+   line-height: 2.0;
+   background-color: aliceblue;
+   padding: 10px;
+   border-radius: 10px;
+   scroll-behavior: smooth;
+
+}
+.edu span{
+    color: rgb(255, 91, 91);
+}
+.hsc{
+   line-height: 2.0;
+   background-color:aliceblue;
+   padding: 10px;
+   padding-right: 360px;  
+   border-radius: 10px;
+}
+.hsc span{
+    color: rgb(255, 91, 91);
+}
+.sslc{
+    line-height: 2.0;
+    background-color: aliceblue;
+    padding: 10px;
+    padding-right: 360px; 
+    border-radius: 10px; 
+}
+.sslc span{
+    color: rgb(255, 91, 91);
+}
+#education{
+    background-image: url(https://img.freepik.com/premium-photo/educational-concept-books-blue_387680-275.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ed {
+  font-weight: bold;
+  font-size: 20px;
+}
+.ed :hover{
+  transform: scale(1.05);
+}
+#codingprofiles{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+     background-image: url(https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80); 
+    /* background-image: url(https://media.istockphoto.com/id/865457032/vector/abstract-futuristic-cyberspace-with-binary-code-matrix-background-with-digits-well-organized.jpg?s=612x612&w=0&k=20&c=IQcdedY8fn_DMq6nwc5MaHUBe0H0d5DPyibHR8J2usk=); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}    
+.code{
+    font-weight: bold;
+    font-family:Helvetica;
+    font-size: 20px;
+    line-height: 30px;
+}
+.code span{
+    color: #cf1c1c;
+}
+/* .hackerrank a{
+    text-decoration: none;
+} */
+ /* .hackerrank h2:hover{ 
+     transform: scale(1.05); 
+ }  */
+.hackerrank{
+    line-height: 30px;
+    background-color:aliceblue;
+    padding: 10px;
+    padding-right: 460px;  
+   border-radius: 10px;
+}
+.hackerrank span{
+    color: red;
+    font-size: 25px;
+}
+.codechef{
+    line-height: 40px;
+    background-color: aliceblue;
+    padding: 10px;
+    padding-right: 225px;
+    border-radius: 10px;
+}
+.leetcode{
+    line-height:40px;
+    background-color: aliceblue;
+    padding: 10px;
+    padding-right: 380px;
+    border-radius: 10px;
+}
+#skills{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background-image: url(https://media.istockphoto.com/id/637711198/photo/hand-with-marker-writing-skill-concept.jpg?s=612x612&w=0&k=20&c=Dq1KVhcx71mfFq36b8Ieaz-H9IKCdu9YdDSkY_5XfM4);
+}
+ .skill{ 
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+     /* background-image: url(https://media.istockphoto.com/id/1388635225/photo/businessman-click-on-skills.webp?b=1&s=170667a&w=0&k=20&c=jRMx2vWE1sopr8DesYBOVSegHDISMt-sEOnBk-wBLLQ=);  */
+    /* background-image: url(https://media.istockphoto.com/id/488837236/photo/beautiful-blue-sky.jpg?s=612x612&w=0&k=20&c=F0SyE1IKuo58otFRBQ8yv9CfmfcMRVytKvjj4KbA3rA=); */
+     background-image: url(https://media.istockphoto.com/id/1279793602/photo/blue-background.jpg?s=612x612&w=0&k=20&c=TCSDlfhyWCUKsFiuv-66-D8aBf3nOdMEIPUoD2unNnU=);
+    background-repeat: no-repeat;
+     background-size: cover;
+ }
+.fskill{
+    width: 50%;
+    max-width: 700;
+    padding: 0 20px;        
+}
+
+.skill-name{
+    font-size: 25px;
+    font-weight: bold;
+    color:black; 
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.skill-bar{
+    height: 14px;
+    /* background-color:black; */
+    border-radius: 18px;
+}
+.skill-per{
+    height: 14px;
+    background-color:aqua;
+    border-radius: 3px;
+    position: relative;
+    animation: fillbars 2.5s;
+}
+.skill-per::before{
+    content: attr(per);
+    position:absolute;
+    padding: 4px 6px;
+    font-weight: bold;
+    background: white;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+}
+.skill-per::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #f1f1f1;
+    top: -20px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+
+}
+@keyframes fillBars{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+#contact{
+    height: 100vh;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxANDQ0PDxAPDw8NDw0NDQ0NDw8NDQ0NFREWFhURFRUYHSggGBolGxUVITEhJSkrLi4uFx8zOD84NygtLisBCgoKDQ0NDw0NDysZFRkrKzc3LSsrKzc3Ny0tLS0tLS0tKy0rLSs3LSsrNy0rKysrLS0tLSsrKy0tKystLSsrK//AABEIALcBEwMBIgACEQEDEQH/xAAZAAEBAQEBAQAAAAAAAAAAAAABAAIFBAf/xAAbEAEBAQACAwAAAAAAAAAAAAAAAREhgRJR8P/EABoBAQEBAQEBAQAAAAAAAAAAAAEAAgQDBQb/xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAMAwEAAhEDEQA/APn50Jt+fSSKSODEkCggkkQiKCBSgmaiERWcaoDUZsFaxmgxmhoJpkGwYGozRjVgBYsGNs0NRmwU6qmmWbGqyGoMFNAK1Ln0kXcITqfMOoFJIJJJJIKpAoEJBEAgUiggWkIgNM0NM0GihoM2NYKCGa1WaGoKKaAWaK1WcTUDNasZDTIaoDQR6CTuJJ1PmpakkkkkkkkEkChUkQCAkEgRQUiyCqGmEazQRRSA1BYLDRYmmQaAWQ0LA1GWbGhQ1GViFiKSSLthanQ+cdWhJFBEEVIFLRUkkgikgEgkCKy0KGhWTYKDBWWmdTS0LRoIBFoaFBAIrJoTUFBotDTKLKKRwIuyRqdD55QSB1BJFDUkkkiqEAlqQBVCSI0HWQVQqA1ACERRSA0ArQCBaaKGoLVUyihUKGlgpCIRz7lIuuQnu+eUEkdWhJJakktQSSGrUCglqKZ0gFDUERQdFDSoqFBAWhNIWKoFlKgEUU0JoUU0AwCpIpIAuwtCe7gJCSOhIpVIUJJaESNQqRA1AqirRqKqABQ1aE0qEAUKtAKoVFRCqGhoAiggUpNMohEaiEnX1M6terhxpMkooJIhLUkgAToQ1IhaEVQgCqELUSKgChqtFoaFStGooalQWbQQmho00AoJIqghFnkrUC6hlYL2cTS1lag1q0JJWpaNRIWjUjqABw0IVFBUakaLRqoK0VJNJmm0aCghQlaKgmgkKiA1RQQkkRaCgQl2knR0ys6terlaQ1IHVRqSw6gEihUilqGpELQCgtWooatSIWoBLRVVURQrQGlQlqKwJaiA0AQqgkqkgRqawJPctEqejma1MpJrUydIKGjQWtGhakktCJAVSVQ0AnVQESFUCEmUjRqCaWpAJYCEUlQilVwrEhElQQmugk9g1Jt4GKpEFJJIJJIVJFJJJBIIaqkqQqkCBpSQ0UpECpIoFAsqpJLVQkTAkkKpUgWfIpI4/9k=);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* #contact h1{
+    font-size: 40px;
+} */
+.con{
+    font-size: 25px;
+    color: #f1f1f1;
+}
+.info{
+    line-height: 50px;
+    background-color:aliceblue;
+    padding: 10px;
+    padding-right: 300px;  
+    border-radius: 10px;
+}

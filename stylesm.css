@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+.container{
+    width: 100%; 
+}
+nav{
+    background-color: black;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+nav ul{
+     float: right; 
+    margin-right: 50px;
+}
+label.logo{
+    color: aliceblue;
+    line-height: 60px;
+    font-size: 30px;
+    padding:  0 100px 10px;
+}
+nav ul li{
+    font-size: 20px;
+    display: inline-block; 
+    padding: 20px;
+    list-style: none;
+} li a{
+    text-decoration: none;
+    color: white;
+}
+#home{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background:rgb(251, 148, 89);
+    display: block;  
+    margin: auto;
+    transition: 0.5s;
+}
+ nav ul li:hover::after{
+    width: 100%;
+}
+.image{
+    width: 250px;
+    border-radius: 20px;
+    margin-left:300px;
+}
+.top{
+    margin-right: 700px;
+    color: white;
+    font-size: 20px;
+}
+#home{
+    background-image: url(https://media.istockphoto.com/id/1445256568/photo/neon-programming-code.jpg?s=612x612&w=0&k=20&c=z8fHciC3VG1IbCDlh9DIHeUGsn4scwVXLuodjArxQds=); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    scroll-behavior: smooth;
+    /* background:linear-gradient(-45deg,#ea2827,#181818); */
+ }
+ #education{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    /* border: 1px solid white; */
+    /* padding: 0 150px; */
+}
+.edu {
+   line-height: 2.0;
+   background-color: aliceblue;
+   padding: 10px;
+   border-radius: 10px;
+   scroll-behavior: smooth;
+
+}
+.edu span{
+    color: rgb(255, 91, 91);
+}
+.hsc{
+   line-height: 2.0;
+   background-color:aliceblue;
+   padding: 10px;
+   padding-right: 360px;  
+   border-radius: 10px;
+}
+.hsc span{
+    color: rgb(255, 91, 91);
+}
+.sslc{
+    line-height: 2.0;
+    background-color: aliceblue;
+    padding: 10px;
+    padding-right: 360px; 
+    border-radius: 10px; 
+}
+.sslc span{
+    color: rgb(255, 91, 91);
+}
+#education{
+    background-image: url(https://img.freepik.com/premium-photo/educational-concept-books-blue_387680-275.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ed {
+  font-weight: bold;
+  font-size: 20px;
+}
+.ed :hover{
+  transform: scale(1.05);
+}
+#codingprofiles{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+     background-image: url(https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80); 
+    /* background-image: url(https://media.istockphoto.com/id/865457032/vector/abstract-futuristic-cyberspace-with-binary-code-matrix-background-with-digits-well-organized.jpg?s=612x612&w=0&k=20&c=IQcdedY8fn_DMq6nwc5MaHUBe0H0d5DPyibHR8J2usk=); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}    
+.code{
+    font-weight: bold;
+    font-family:Helvetica;
+    font-size: 20px;
+    padding-top: 20px;
+    line-height: 40px;
+}
+.code span{
+    color: #cf1c1c;
+}
+/* .hackerrank a{
+    text-decoration: none;
+} */
+ /* .hackerrank h2:hover{ 
+     transform: scale(1.05); 
+ }  */
+.hackerrank{
+    line-height: 30px;
+    background-color:aliceblue;
+    padding: 10px;
+    padding-right: 460px;  
+   border-radius: 10px;
+}
+.hackerrank span{
+    color: red;
+    font-size: 25px;
+}
+.codechef{
+    line-height: 40px;
+    background-color: aliceblue;
+    padding: 10px;
+    padding-right: 225px;
+    border-radius: 10px;
+}
+.leetcode{
+    line-height:40px;
+    background-color: aliceblue;
+    padding: 10px;
+    padding-right: 380px;
+    border-radius: 10px;
+}
+.container1{
+    /* margin-left: 20%; */
+    width: 100%;
+} 
+
+#skills{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: black;
+}
+.sname{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: -2px;
+}
+.skill{
+    width: 50%;
+    position: relative;
+    height: 70px;
+    background-color:white;
+    display: flex;
+    border-radius: 15px;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+.barinfo{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.progres{
+    position: absolute;
+    display: flex;
+    width: 80%;
+    height: 10px;
+    margin-left: 20px;
+    background-color: rgb(133, 139, 139);
+    border-radius: 10px;
+}
+.progres.html span{
+    width:80%;
+}
+ .progres.css span{
+    width: 70%;
+} 
+.progres.java span{
+    width:80%;
+}
+.progres.c span{
+    width: 70%;
+}
+.progres.sql span{
+    width: 60%;
+}
+.progres span{
+    height: 100%;
+    background-color:green;
+    border-radius: 10px;
+}
+.progres.html::after{
+     content:"80%";
+     
+}
+.progres.css::after{
+    content:"70%";
+    
+}
+.progres.java::after{
+    content:"80%";
+    
+}
+.progres.c::after{
+    content:"70%";
+    
+}
+.progres.sql::after{
+    content:"60%";
+    
+}
+.progres::after{
+    position: absolute;
+    top: -30px;
+    right: 0;
+    font-size: 20px; 
+    font-weight: bold; 
+}
+#contact{
+    height:80vh;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxANDQ0PDxAPDw8NDw0NDQ0NDw8NDQ0NFREWFhURFRUYHSggGBolGxUVITEhJSkrLi4uFx8zOD84NygtLisBCgoKDQ0NDw0NDysZFRkrKzc3LSsrKzc3Ny0tLS0tLS0tKy0rLSs3LSsrNy0rKysrLS0tLSsrKy0tKystLSsrK//AABEIALcBEwMBIgACEQEDEQH/xAAZAAEBAQEBAQAAAAAAAAAAAAABAAIFBAf/xAAbEAEBAQACAwAAAAAAAAAAAAAAAREhgRJR8P/EABoBAQEBAQEBAQAAAAAAAAAAAAEAAgQDBQb/xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAMAwEAAhEDEQA/APn50Jt+fSSKSODEkCggkkQiKCBSgmaiERWcaoDUZsFaxmgxmhoJpkGwYGozRjVgBYsGNs0NRmwU6qmmWbGqyGoMFNAK1Ln0kXcITqfMOoFJIJJJJIKpAoEJBEAgUiggWkIgNM0NM0GihoM2NYKCGa1WaGoKKaAWaK1WcTUDNasZDTIaoDQR6CTuJJ1PmpakkkkkkkkEkChUkQCAkEgRQUiyCqGmEazQRRSA1BYLDRYmmQaAWQ0LA1GWbGhQ1GViFiKSSLthanQ+cdWhJFBEEVIFLRUkkgikgEgkCKy0KGhWTYKDBWWmdTS0LRoIBFoaFBAIrJoTUFBotDTKLKKRwIuyRqdD55QSB1BJFDUkkkiqEAlqQBVCSI0HWQVQqA1ACERRSA0ArQCBaaKGoLVUyihUKGlgpCIRz7lIuuQnu+eUEkdWhJJakktQSSGrUCglqKZ0gFDUERQdFDSoqFBAWhNIWKoFlKgEUU0JoUU0AwCpIpIAuwtCe7gJCSOhIpVIUJJaESNQqRA1AqirRqKqABQ1aE0qEAUKtAKoVFRCqGhoAiggUpNMohEaiEnX1M6terhxpMkooJIhLUkgAToQ1IhaEVQgCqELUSKgChqtFoaFStGooalQWbQQmho00AoJIqghFnkrUC6hlYL2cTS1lag1q0JJWpaNRIWjUjqABw0IVFBUakaLRqoK0VJNJmm0aCghQlaKgmgkKiA1RQQkkRaCgQl2knR0ys6terlaQ1IHVRqSw6gEihUilqGpELQCgtWooatSIWoBLRVVURQrQGlQlqKwJaiA0AQqgkqkgRqawJPctEqejma1MpJrUydIKGjQWtGhakktCJAVSVQ0AnVQESFUCEmUjRqCaWpAJYCEUlQilVwrEhElQQmugk9g1Jt4GKpEFJJIJJIVJFJJJBIIaqkqQqkCBpSQ0UpECpIoFAsqpJLVQkTAkkKpUgWfIpI4/9k=);
+    /* background: radial-gradient(rgba(43, 55, 96, 1), rgba(11, 16, 35, 1)); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* #contact h1{
+    font-size: 40px;
+} */
+.con{
+    font-size: 20px;
+    margin-top: 25px;
+    color: #f1f1f1;
+}
+.info{
+    line-height: 50px;
+    background-color:aliceblue;
+    padding: 10px;
+    padding-right: 300px;  
+    border-radius: 10px;
+}
+#footer{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.fd{
+     margin-top: 30px;
+     margin-bottom: 10px;
+     letter-spacing: 2px; 
+     font-size: 20px;
+
+}
+.fdicons {
+    display: flex;
+    color: green;
+    font-size: 20px;
+    gap: 30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.fdicons a{
+    color: darkgreen;
+}
+
+
